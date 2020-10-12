@@ -1,4 +1,4 @@
-#Sign in with Apple JWT generator
+# Sign in with Apple JWT generator
 
 A simple CLI script that allows you to generate the JWT token required by the sign in with Apple's API.
 
