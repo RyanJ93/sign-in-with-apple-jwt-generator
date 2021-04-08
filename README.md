@@ -1,10 +1,14 @@
-#Sign in with Apple JWT generator
+# Sign in with Apple JWT generator
 
 A simple CLI script that allows you to generate the JWT token required by the sign in with Apple's API.
 
 ## Usage
 
-Install the required dependency: `jwt`, then launch the `main.py` script in your CLI, here's the list of the required arguments:
+First of all you need to install the required dependency (`pyjwt`), you can use this command: `pip install pyjwt` or `python -m pip install pyjwt`.
+<br />
+You may also need to install another dependency called `cryptography`, you can use this command: `pip install cryptography` or `python -m pip install cryptography`.
+<br />
+Once dependencies have been installed you can launch the `main.py` script in your CLI, here's the list of the required arguments:
 
 - *--team_id*: The team ID.
 - *--key_id*: The key ID provided by Apple.
