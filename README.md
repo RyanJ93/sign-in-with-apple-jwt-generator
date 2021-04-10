@@ -4,10 +4,12 @@ A simple CLI script that allows you to generate the JWT token required by the si
 
 ## Usage
 
-First of all you need to install the required dependency (`pyjwt`), you can use this command: `pip install pyjwt` or `python -m pip install pyjwt`.
-<br />
-You may also need to install another dependency called `cryptography`, you can use this command: `pip install cryptography` or `python -m pip install cryptography`.
-<br />
+First you need to install all the required dependencies: you can install them from the requirements.txt file running the following command in the project's main directory:
+```bash
+pip install -r requirements.txt
+```
+You may need to use pip3 rather than pip according to your Python environment, please note that this script requires Python version 3.7 or greater to work.
+
 Once dependencies have been installed you can launch the `main.py` script in your CLI, here's the list of the required arguments:
 
 - *--team_id*: The team ID.
@@ -17,5 +19,3 @@ Once dependencies have been installed you can launch the `main.py` script in you
 - *--out_dir*: The path to the directory where the file containing the JWT token will be saved in.
 
 Based upon this great and useful [repo by addisonwebb](https://github.com/addisonwebb/Apple-JWT-Generator).
-
-Requires Python 3.7+.
