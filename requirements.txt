@@ -1,2 +1,2 @@
-PyJWT==1.6.4
+pyjwt
 cryptography

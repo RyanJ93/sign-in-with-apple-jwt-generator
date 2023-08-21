@@ -33,7 +33,7 @@ expiration_timestamp: float = issued_timestamp + 15552000
 with open(args.private_key, 'r') as file:
     private_key_contents: str = file.read()
 # Generate the JWT.
-jwt: str = jwt.encode({
+encodedJWT: str = jwt.encode({
     'iss': args.team_id,
     'iat': issued_timestamp,
     'exp': expiration_timestamp,
@@ -47,8 +47,8 @@ if args.out_dir:
     destination_path: str = args.out_dir + '/loginWithApple.jwt'
     print('Saving JWT to ' + destination_path)
     with open(destination_path, 'w') as destination:
-        destination.write(jwt.decode('ascii'))
+        destination.write(encodedJWT)
     print('JWT generated and saved successfully!')
 else:
     # Print out the generated JWT.
-    print('JWT generated successfully! \n' + jwt.decode('ascii'))
+    print('JWT generated successfully! \n' + encodedJWT)
